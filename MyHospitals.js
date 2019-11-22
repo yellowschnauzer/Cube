@@ -52,7 +52,7 @@
 //				indiURL = resp.indicators,
 				tableData = [];
 			
-			for (var i = 0, len = .length; i < len; i++) {
+			for (var i = 0, len = hospDataset.length; i < len; i++) {
 				tableData.push({
 					"description" : hospDataset.[i].description,
 //					"id" : hospDataset.[i].id,
