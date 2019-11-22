@@ -55,14 +55,14 @@
 			for (var i = 0, len = hospDataset.length; i < len; i++) {
 				tableData.push({
 					"description" : hospDataset.[i].description,
-					"id" : hospDataset.[i].id,
-					"isClosed" : hospDataset.[i].isClosed,
-					"isPublic" : hospDataset.[i].isPublic,
-					"latitude" : hospDataset.[i].latitude,
-					"longitude" : hospDataset.[i].longitude,
-					"name" : hospDataset.[i].name,
-					"phnCode" : hospDataset.[i].phnCode,
-					"phnName" : hospDataset.[i].phnName,
+//					"id" : hospDataset.[i].id,
+//					"isClosed" : hospDataset.[i].isClosed,
+//					"isPublic" : hospDataset.[i].isPublic,
+//					"latitude" : hospDataset.[i].latitude,
+//					"longitude" : hospDataset.[i].longitude,
+//					"name" : hospDataset.[i].name,
+//					"phnCode" : hospDataset.[i].phnCode,
+//					"phnName" : hospDataset.[i].phnName,
 					"state" : hospDataset.[i].state
 				});
 			}
@@ -72,6 +72,7 @@
 			doneCallback();
 		});
 	};
+
     tableau.registerConnector(myConnector);
 	
 	$(document).ready(function () {
