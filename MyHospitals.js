@@ -47,8 +47,8 @@
  
  // Download data
     myConnector.getData = function (table, doneCallback) {
-		$.getJSON("http://myhospitals.gov.au/api/datasets?indicatorId=111", function (resp) {
-			var hospDataset = resp.hospitals[0],
+		$.getJSON("www.myhospitals.gov.au/api/datasets?indicatorId=111", function (resp) {
+			var hospDataset = resp.hospitals,
 //				indiURL = resp.indicators,
 			    tableData = [];
 			
