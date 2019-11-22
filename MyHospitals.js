@@ -63,7 +63,7 @@
 //					"name" : hospDataset.[i].name,
 //					"phnCode" : hospDataset.[i].phnCode,
 //					"phnName" : hospDataset.[i].phnName,
-					"state" : hospDataset.0[i].state
+					"state" : hospDataset.[i].state
 				});
 			}
 
