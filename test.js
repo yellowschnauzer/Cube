@@ -13,7 +13,6 @@
             dataType: tableau.dataTypeEnum.float
         }, {
             id: "title",
-            alias: "title",
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "location",
