@@ -6,16 +6,16 @@
    myConnector.getSchema = function (schemaCallback) {
     
 		var HospitalCols = [
-			{ id : "description", alias : "Description", dataType : tableau.dataTypeEnum.string },
+			{ id : "description", dataType : tableau.dataTypeEnum.string },
 //			{ id : "id", alias : "ID", dataType : tableau.dataTypeEnum.string },
 //			{ id : "isClosed", alias : "Closed", dataType : tableau.dataTypeEnum.boolean },
 //			{ id : "isPublic", alias : "Public", dataType : tableau.dataTypeEnum.boolean },
 //			{ id : "latitude", alias : "Latitude", dataType : tableau.dataTypeEnum.float },
 //			{ id : "longitude", alias : "Longitude", dataType : tableau.dataTypeEnum.float },
-			{ id : "name", alias : "Name", dataType : tableau.dataTypeEnum.string  },
+			{ id : "name", dataType : tableau.dataTypeEnum.string },
 //			{ id : "phnCode", alias : "Code", dataType : tableau.dataTypeEnum.float },
 //			{ id : "phnName", alias : "Hospital", dataType : tableau.dataTypeEnum.string },
-			{ id : "state", alias : "State", dataType : tableau.dataTypeEnum.string }
+			{ id : "state", dataType : tableau.dataTypeEnum.string }
 		];
 
 		var HospitalsTableInfo = {
@@ -48,8 +48,8 @@
  // Download data
     myConnector.getData = function (table, doneCallback) {
 	    var tableData = [];
-		$.getJSON("http://myhospitals.gov.au/api", function (resp) {
-			var hospDataset = resp.hospitals;
+		$.getJSON("http://myhospitals.gov.au/api/hospitals", function (resp) {
+			var hospDataset = resp;
 //				indiURL = resp.indicators,
 			
 			for (var i = 0, len = hospDataset.length; i < len; i++) {
