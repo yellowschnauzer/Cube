@@ -6,7 +6,7 @@
    myConnector.getSchema = function (schemaCallback) {
     
 		var HospitalCols = [
-			{ id : "description", dataType : tableau.dataTypeEnum.string },
+//			{ id : "description", dataType : tableau.dataTypeEnum.string },
 //			{ id : "id", alias : "ID", dataType : tableau.dataTypeEnum.string },
 //			{ id : "isClosed", alias : "Closed", dataType : tableau.dataTypeEnum.boolean },
 //			{ id : "isPublic", alias : "Public", dataType : tableau.dataTypeEnum.boolean },
@@ -54,7 +54,7 @@
 			
 			for (var i = 0, len = hospDataset.length; i < len; i++) {
 				tableData.push({
-					"description" : hospDataset[i].description,
+//					"description" : hospDataset[i].description,
 //					"id" : hospDataset[i].id,
 //					"isClosed" : hospDataset[i].isClosed,
 //					"isPublic" : hospDataset[i].isPublic,
