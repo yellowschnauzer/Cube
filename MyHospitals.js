@@ -48,22 +48,22 @@
  // Download data
     myConnector.getData = function (table, doneCallback) {
 		$.getJSON("http://myhospitals.gov.au/api/datasets", function (resp) {
-			var hospDataset = resp.indicatorId,
+			var hospDataset = resp.hospitals,
 //				indiURL = resp.indicators,
 			    tableData = [];
 			
 			for (var i = 0, len = hospDataset.length; i < len; i++) {
 				tableData.push({
-					"description" : hospDataset[i].hospitals.description,
+					"description" : hospDataset[i].description,
 //					"id" : hospDataset[i].id,
 //					"isClosed" : hospDataset[i].isClosed,
 //					"isPublic" : hospDataset[i].isPublic,
 //					"latitude" : hospDataset[i].latitude,
 //					"longitude" : hospDataset[i].longitude,
-					"name" : hospDataset[i].hospitals.name,
+					"name" : hospDataset[i].name,
 //					"phnCode" : hospDataset[i].phnCode,
 //					"phnName" : hospDataset[i].phnName,
-					"state" : hospDataset[i].hospitals.state
+					"state" : hospDataset[i].state
 				});
 			}
 
