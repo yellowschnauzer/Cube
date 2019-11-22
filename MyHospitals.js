@@ -10,11 +10,11 @@
 //			{ id : "id", alias : "ID", dataType : tableau.dataTypeEnum.string },
 //			{ id : "isClosed", alias : "Closed", dataType : tableau.dataTypeEnum.boolean },
 //			{ id : "isPublic", alias : "Public", dataType : tableau.dataTypeEnum.boolean },
-			{ id : "latitude", alias : "Latitude", dataType : tableau.dataTypeEnum.float },
-			{ id : "longitude", alias : "Longitude", dataType : tableau.dataTypeEnum.float },
+//			{ id : "latitude", alias : "Latitude", dataType : tableau.dataTypeEnum.float },
+//			{ id : "longitude", alias : "Longitude", dataType : tableau.dataTypeEnum.float },
 			{ id : "name", alias : "Name", dataType : tableau.dataTypeEnum.string  },
-			{ id : "phnCode", alias : "Code", dataType : tableau.dataTypeEnum.float },
-			{ id : "phnName", alias : "Hospital", dataType : tableau.dataTypeEnum.string },
+//			{ id : "phnCode", alias : "Code", dataType : tableau.dataTypeEnum.float },
+//			{ id : "phnName", alias : "Hospital", dataType : tableau.dataTypeEnum.string },
 			{ id : "state", alias : "State", dataType : tableau.dataTypeEnum.string }
 		];
 
@@ -58,11 +58,11 @@
 //					"id" : hospDataset[i].id,
 //					"isClosed" : hospDataset[i].isClosed,
 //					"isPublic" : hospDataset[i].isPublic,
-					"latitude" : hospDataset[i].latitude,
-					"longitude" : hospDataset[i].longitude,
+//					"latitude" : hospDataset[i].latitude,
+//					"longitude" : hospDataset[i].longitude,
 					"name" : hospDataset[i].name,
-					"phnCode" : hospDataset[i].phnCode,
-					"phnName" : hospDataset[i].phnName,
+//					"phnCode" : hospDataset[i].phnCode,
+//					"phnName" : hospDataset[i].phnName,
 					"state" : hospDataset[i].state
 				});
 			}
