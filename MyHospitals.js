@@ -6,7 +6,7 @@
    myConnector.getSchema = function (schemaCallback) {
     
 		var HospitalCols = [
-//			{ id : "description", dataType : tableau.dataTypeEnum.string },
+			{ id : "description", dataType : tableau.dataTypeEnum.string },
 //			{ id : "id", alias : "ID", dataType : tableau.dataTypeEnum.string },
 //			{ id : "isClosed", alias : "Closed", dataType : tableau.dataTypeEnum.boolean },
 //			{ id : "isPublic", alias : "Public", dataType : tableau.dataTypeEnum.boolean },
@@ -47,23 +47,23 @@
  
  // Download data
     myConnector.getData = function (table, doneCallback) {
-		$.getJSON("http://myhospitals.gov.au/api/hospitals", function (resp) {
-			var hospDataset = resp,
+		$.getJSON("http://myhospitals.gov.au/api/datasets", function (resp) {
+			var hospDataset = resp.indicatorId,
 //				indiURL = resp.indicators,
 			    tableData = [];
 			
 			for (var i = 0, len = hospDataset.length; i < len; i++) {
 				tableData.push({
-//					"description" : hospDataset[i].description,
+					"description" : hospDataset[i].hospitals.description,
 //					"id" : hospDataset[i].id,
 //					"isClosed" : hospDataset[i].isClosed,
 //					"isPublic" : hospDataset[i].isPublic,
 //					"latitude" : hospDataset[i].latitude,
 //					"longitude" : hospDataset[i].longitude,
-					"name" : hospDataset[i].name,
+					"name" : hospDataset[i].hospitals.name,
 //					"phnCode" : hospDataset[i].phnCode,
 //					"phnName" : hospDataset[i].phnName,
-					"state" : hospDataset[i].state
+					"state" : hospDataset[i].hospitals.state
 				});
 			}
 
