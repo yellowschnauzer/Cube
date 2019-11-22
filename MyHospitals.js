@@ -15,7 +15,7 @@
 			{ id : "name", alias : "Name", dataType : tableau.dataTypeEnum.string  },
 			{ id : "phnCode", alias : "Code", dataType : tableau.dataTypeEnum.float },
 			{ id : "phnName", alias : "Hospital", dataType : tableau.dataTypeEnum.string },
-			{ id : "state", alias : "State", dataType : tableau.dataTypeEnum.string },
+			{ id : "state", alias : "State", dataType : tableau.dataTypeEnum.string }
 		];
 
 		var HospitalsTableInfo = {
@@ -25,10 +25,10 @@
 		};
 		
 //		var IndicatorCols = [
-//			{ id : "code", alias : "Code", dataTypeEnum : tableau.dataTypeEnum.float }
-//			{ id : "indicatorName", alias : "Indicator", dataTypeEnum : tableau.dataTypeEnum.string }
-//			{ id : "name", alias : "Name", dataTypeEnum : tableau.dataTypeEnum.string }
-//			{ id : "quarterlyPeriods", alias : "Period", dataTypeEnum : tableau.dataTypeEnum.string }
+//			{ id : "code", alias : "Code", dataTypeEnum : tableau.dataTypeEnum.float },
+//			{ id : "indicatorName", alias : "Indicator", dataTypeEnum : tableau.dataTypeEnum.string },
+//			{ id : "name", alias : "Name", dataTypeEnum : tableau.dataTypeEnum.string },
+//			{ id : "quarterlyPeriods", alias : "Period", dataTypeEnum : tableau.dataTypeEnum.string },
 //			{ id : "unitOfMeasure", alias : "Measure", dataTypeEnum : tableau.dataTypeEnum.string }
 //		];
 		
