@@ -52,7 +52,7 @@
 //				indiURL = resp.indicators,
 				tableData = [];
 			
-			for (var i = 0, len = hospDataset.length; i < len; i++) {
+			for (var i = 0, len = .length; i < len; i++) {
 				tableData.push({
 					"description" : hospDataset.[i].description,
 //					"id" : hospDataset.[i].id,
@@ -63,7 +63,7 @@
 //					"name" : hospDataset.[i].name,
 //					"phnCode" : hospDataset.[i].phnCode,
 //					"phnName" : hospDataset.[i].phnName,
-					"state" : hospDataset.[i].state
+					"state" : hospDataset.0[i].state
 				});
 			}
 
