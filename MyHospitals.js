@@ -11,9 +11,9 @@
 			{ id : "isClosed", alias : "Closed", dataType : tableau.dataTypeEnum.boolean },
 			{ id : "isPublic", alias : "Public", dataType : tableau.dataTypeEnum.boolean },
 			{ id : "latitude", alias : "Latitude", dataType : tableau.dataTypeEnum.float },
-			{ id : "longitude", alias : "Longitude", dataType : tableau.dataTypeEnum.float }
-			{ id : "name", alias : "Name", dataType : tableau.dataTypeEnum.string  }
-			{ id : "phnCode", alias : "Code", dataType : tableau.dataTypeEnum.float }
+			{ id : "longitude", alias : "Longitude", dataType : tableau.dataTypeEnum.float },
+			{ id : "name", alias : "Name", dataType : tableau.dataTypeEnum.string  },
+			{ id : "phnCode", alias : "Code", dataType : tableau.dataTypeEnum.float },
 			{ id : "phnName", alias : "Hospital", dataType : tableau.dataTypeEnum.string },
 			{ id : "state", alias : "State", dataType : tableau.dataTypeEnum.string },
 		];
