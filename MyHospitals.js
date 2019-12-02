@@ -34,7 +34,7 @@
             {
               "Content-Type": "application/json",
               "Accept": "application/json",
-              "apikey": "e70aa20a-bedc-41f3-a4ce-644ccc61434e"
+              "apikey": ""
             },
             function(resp) {
               var feat = resp.datasets,
